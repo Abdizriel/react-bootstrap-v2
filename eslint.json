@@ -1,0 +1,57 @@
+{
+    "env": {
+        "node": true
+    },
+    "extends": [
+        "plugin:@typescript-eslint/recommended",
+        "prettier/@typescript-eslint"
+    ],
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "sourceType": "module",
+        "project": "tsconfig.json",
+        "ecmaFeatures": {
+            "jsx": true
+        }
+    },
+    "plugins": [
+        "@typescript-eslint",
+        "react"
+    ],
+    "rules": {
+        "brace-style": "warn",
+        "comma-dangle": [
+            "warn",
+            {
+                "functions": "never"
+            }
+        ],
+        "curly": "warn",
+        "quotes": [
+            "warn",
+            "single"
+        ],
+        "react/jsx-uses-react": "warn",
+        "react/jsx-uses-vars": "warn",
+        "space-before-function-paren": [
+            "warn",
+            {
+                "anonymous": "always",
+                "named": "never",
+                "asyncArrow": "always"
+            }
+        ],
+        "no-unused-vars": "off",
+        "@typescript-eslint/no-unused-vars": [
+            "warn",
+            {
+                "argsIgnorePattern": "^_"
+            }
+        ],
+        "semi": "off",
+        "@typescript-eslint/semi": [
+            "warn",
+            "never"
+        ]
+    }
+}

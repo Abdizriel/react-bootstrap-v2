@@ -1,0 +1,14 @@
+{
+    "transform": {
+        "^.+\\.tsx?$": "ts-jest"
+    },
+    "testRegex": "^.+\\.spec\\.(js|ts)x?$",
+    "testEnvironment": "node",
+    "verbose": true,
+    "testURL": "http://localhost/",
+    "moduleFileExtensions": ["ts", "tsx", "js", "jsx"],
+    "moduleNameMapper": {
+        "\\.css$": "identity-obj-proxy"
+    },
+    "setupFiles": ["<rootDir>/test/setup.ts"]
+}
